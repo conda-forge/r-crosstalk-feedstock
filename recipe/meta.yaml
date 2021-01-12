@@ -1,4 +1,4 @@
-{% set version = '1.1.0.1' %}
+{% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/crosstalk_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/crosstalk/crosstalk_{{ version }}.tar.gz
-  sha256: 36a70b10bc11826e314c05f9579fd791b9ac3b3a2cfed4d4ca74ce1ad991300e
+  sha256: ed3234f7f000fb607cc42e005d68be1dd598d95fa687a3f6e6b17ba38e36ccd8
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -44,12 +44,10 @@ test:
 about:
   home: https://rstudio.github.io/crosstalk/
   license: MIT
-  summary: Provides building blocks for allowing HTML widgets to communicate with each other,
-    with Shiny or without (i.e. static .html files). Currently supports linked brushing
-    and filtering.
+  summary: Provides building blocks for allowing HTML widgets to communicate with each other, with Shiny or without (i.e. static .html files). Currently supports linked brushing and filtering.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
