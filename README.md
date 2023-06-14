@@ -1,11 +1,11 @@
-About r-crosstalk
-=================
+About r-crosstalk-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-crosstalk-feedstock/blob/main/LICENSE.txt)
 
 Home: https://rstudio.github.io/crosstalk/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-crosstalk-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides building blocks for allowing HTML widgets to communicate with each other, with Shiny or without (i.e. static .html files). Currently supports linked brushing and filtering.
 
