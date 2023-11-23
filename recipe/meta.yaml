@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/crosstalk_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/crosstalk/crosstalk_{{ version }}.tar.gz
-  sha256: 4237baab35cd246a8a98fb9cf4ce53b6ddbc31d00742ded4edea0479613d1ea0
+  sha256: 680cf08416d6d5a1194dd85ee5695c268af9d4d01b201448e1d486c6e06014f1
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
